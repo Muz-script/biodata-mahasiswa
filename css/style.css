@@ -1,0 +1,171 @@
+/* ===== Reset & dasar ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #0f1f3a;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* ===== Header & footer ===== */
+.header {
+  text-align: center;
+  padding: 40px 20px 20px;
+}
+
+.header h1 {
+  font-size: 2.2rem;
+}
+
+.header p {
+  color: #b8c4dc;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  color: #b8c4dc;
+  font-size: 0.9rem;
+}
+
+/* ===== Container & kartu ===== */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.card {
+  background-color: #182a4a;
+  border-left: 6px solid #f28c38;
+  border-radius: 20px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.card h2 {
+  margin-bottom: 14px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+/* ===== Profil ===== */
+.profil {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.foto {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #f28c38;
+}
+
+.data-list,
+.hobi {
+  list-style: none;
+}
+
+.data-list li,
+.hobi li {
+  padding: 6px 0;
+  color: #dbe3f3;
+}
+
+.data-list strong {
+  display: inline-block;
+  min-width: 130px;
+  color: #ffffff;
+}
+
+.hobi li::before {
+  content: "• ";
+  color: #f28c38;
+}
+
+/* ===== Tabel ===== */
+.tabel-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #2f4570;
+}
+
+th {
+  background-color: #f28c38;
+  color: #0f1f3a;
+}
+
+tr:hover td {
+  background-color: #21375f;
+}
+
+/* ===== Tombol ===== */
+.tengah {
+  text-align: center;
+}
+
+.tombol {
+  background-color: #f28c38;
+  color: #0f1f3a;
+  border: none;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.tombol:hover {
+  background-color: #ffa95c;
+  transform: scale(1.05);
+}
+
+.pesan {
+  margin-top: 16px;
+  font-weight: bold;
+  color: #ffa95c;
+}
+
+/* ===== Responsif (layar ponsel) ===== */
+@media (max-width: 600px) {
+  .header h1 {
+    font-size: 1.6rem;
+  }
+
+  .profil {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .data-list strong {
+    display: block;
+    min-width: 0;
+  }
+
+  .card {
+    padding: 18px;
+  }
+
+  th, td {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+}
